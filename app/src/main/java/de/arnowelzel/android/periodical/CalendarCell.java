@@ -198,8 +198,8 @@ public class CalendarCell extends Button {
         gradientPeriodPredicted = makeCellGradient(0xffef9a9a, 0xffef9a9a);
         gradientFertilityPredicted = makeCellGradient(0xff2196F3, 0xff2196F3);
         gradientFertilityFuture = makeCellGradient(0xff90CAF9, 0xff90CAF9);
-        gradientInfertilePredicted = makeCellGradient(0xffffee58, 0xffffee58);
-        gradientInfertileFuture = makeCellGradient(0xfffff59d, 0xfffff59d);
+        gradientInfertilePredicted = makeCellGradient(0xff2196F3, 0xff2196F3);
+        gradientInfertileFuture = makeCellGradient(0xff90CAF9, 0xff90CAF9);
     }
 
     /**
@@ -238,7 +238,7 @@ public class CalendarCell extends Button {
                 break;
             case DayEntry.PERIOD_PREDICTED: // Predicted period day
                 gradient = gradientPeriodPredicted;
-                colorLabel = 0xde000000;
+                colorLabel = 0xffffffff;
                 break;
             case DayEntry.FERTILITY_PREDICTED: // Calculated fertile day
             case DayEntry.OVULATION_PREDICTED: // Calculated day of ovulation
@@ -248,15 +248,15 @@ public class CalendarCell extends Button {
             case DayEntry.FERTILITY_FUTURE: // Calculated fertile day in the future
             case DayEntry.OVULATION_FUTURE: // Calculated day of ovulation in the future
                 gradient = gradientFertilityFuture;
-                colorLabel = 0xde000000;
+                colorLabel = 0xffffffff;
                 break;
             case DayEntry.INFERTILE_PREDICTED:        // Calculated infertile day
                 gradient = gradientInfertilePredicted;
-                colorLabel = 0xde000000;
+                colorLabel = 0xffffffff;
                 break;
             case DayEntry.INFERTILE_FUTURE: // Calculated infertile day in the future
                 gradient = gradientInfertileFuture;
-                colorLabel = 0xde000000;
+                colorLabel = 0xffffffff;
                 break;
             }
 
