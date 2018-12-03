@@ -112,7 +112,7 @@ public class PreferenceActivity extends AppCompatPreferenceActivity implements S
                         value = 0;
                     }
 
-                    if (value < 60) {
+                    if (value < 6) {
                         Toast.makeText(context,
                                 getResources().getString(R.string.invalid_maximum_cycle_length),
                                 Toast.LENGTH_SHORT).show();

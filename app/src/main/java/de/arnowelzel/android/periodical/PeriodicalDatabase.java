@@ -511,7 +511,7 @@ class PeriodicalDatabase {
         maximumcyclelength = preferences.getInt("maximum_cycle_length", DEFAULT_CYCLE_LENGTH);
 
         // Just a safety measure: limit maximum cycle lengths to the allowed minimum value
-        if(maximumcyclelength < 60) maximumcyclelength = 60;
+//        if(maximumcyclelength < 60) maximumcyclelength = 60;
 
         // Clean up existing data
         dayEntries.removeAllElements();
