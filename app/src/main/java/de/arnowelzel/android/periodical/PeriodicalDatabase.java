@@ -641,7 +641,7 @@ class PeriodicalDatabase {
             datePredicted.setTime(entry.date.getTime());
 
             dayofcycle++;
-            for (int cycles = 0; cycles < 3; cycles++) {
+            for (int cycles = 0; cycles < 30; cycles++) {
                 for (int day = (cycles == 0 ? dayofcycle : 1); day <= cycleAverage; day++) {
                     datePredicted.add(GregorianCalendar.DATE, 1);
 
